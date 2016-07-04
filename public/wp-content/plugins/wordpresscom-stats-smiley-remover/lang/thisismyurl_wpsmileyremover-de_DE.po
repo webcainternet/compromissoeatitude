@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress.com Stats Smiley Remover v15.01\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-12-18 02:48:47+0000\n"
+"Last-Translator: thisismyurl <cross@thisismyurl.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#. translators: plugin header field 'Name'
+#: wordpresscom-stats-smiley-remover.php:0
+#: wordpresscom-stats-smiley-remover.php:120
+#@ thisismyurl_wpsmileyremover
+msgid "WordPress.com Stats Smiley Remover"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#: wordpresscom-stats-smiley-remover.php:0
+#@ thisismyurl_wpsmileyremover
+msgid "http://thisismyurl.com/downloads/wordpress-com-stats-smiley-remover/"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: wordpresscom-stats-smiley-remover.php:0
+#@ thisismyurl_wpsmileyremover
+msgid "The WordPress.com Stats Smiley Remover quickly removes the smiley face placed in the footer of your site by the WordPress.com Stats plugin."
+msgstr "Entfernt den Smiley erstellt von WordPress.com Stats und JetPack Plugins für WordPress, indem eine einzige Zeile CSS, um Ihre Kopf."
+
+#. translators: plugin header field 'Author'
+#: wordpresscom-stats-smiley-remover.php:0
+#@ thisismyurl_wpsmileyremover
+msgid "Christopher Ross"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: wordpresscom-stats-smiley-remover.php:0
+#@ thisismyurl_wpsmileyremover
+msgid "http://thisismyurl.com/"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: wordpresscom-stats-smiley-remover.php:0
+#@ thisismyurl_wpsmileyremover
+msgid "15.01"
+msgstr ""
+
+#: wordpresscom-stats-smiley-remover.php:107
+#: wordpresscom-stats-smiley-remover.php:108
+#@ thisismyurl_wpsmileyremover
+msgid "WP Smiley"
+msgstr ""
+
+#: wordpresscom-stats-smiley-remover.php:121
+#@ thisismyurl_wpsmileyremover
+msgid "Removes the smiley face created by WordPress.com Stats and JetPack plugins for WordPress by adding a single line of CSS to your header."
+msgstr "Entfernt den Smiley erstellt von WordPress.com Stats und JetPack Plugins für WordPress, indem eine einzige Zeile CSS, um Ihre Kopf."
+
+#: wordpresscom-stats-smiley-remover.php:123
+#@ thisismyurl_wpsmileyremover
+msgid "General Settings"
+msgstr "Grundeinstellungen"
+
+#: wordpresscom-stats-smiley-remover.php:124
+#, php-format
+#@ thisismyurl_wpsmileyremover
+msgid "The plugin has no settings, once activated it will work automattically. For further details, please view the <a href=\"%sreadme.txt\">readme.txt</a> file included with this release."
+msgstr "Das Plugin hat keine Einstellungen, einmal aktiviert, wird automattically arbeiten. Weitere Einzelheiten finden Sie auf der <a href=\\\"%sreadme.txt\\\"> readme.txt </a> Datei mit dieser Version nicht enthalten."
+
+#: wordpresscom-stats-smiley-remover.php:161
+#@ thisismyurl_wpsmileyremover
+msgid "Information"
+msgstr "Informationen"
+
+#: wordpresscom-stats-smiley-remover.php:162
+#@ thisismyurl_wpsmileyremover
+msgid "thisismyurl.com"
+msgstr ""
+

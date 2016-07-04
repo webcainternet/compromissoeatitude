@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+body {margin: 0;}
+
+#marca {float: left; margin: 0; padding: 90px 0 0 0; width: 100%; text-align: center;}
+#container {float: left; position: relative; margin: 0 auto; padding: 50px 0 0 0; width: 420px;}
+#banner {float: left; position: relative; margin: 0; padding: 0; width: 420px; height: 300px; overflow: hidden;}
+#banner ul {float: left; margin: 0; padding: 0; width: 420px; list-style: none;}
+#banner ul li {float: left; margin: 0; padding: 0;}
+#banner ul li.bannerImage {float: left; position: relative; display: none;}
+#banner ul li span {float: left; position: absolute; font: 11px Arial; color: #FFF; padding: 10px 13px; background: #000; height: 280px;}
+#banner ul li span {filter: alpha(opacity=70); -moz-opacity: 0.7; -khtml-opacity: 0.7; opacity: 0.7; display: none;}
+#banner ul li span.left {float: left; top: 0; left: 0;}
+#banner ul li span.right {float: left; left: 0; top: 0; bottom: 0;}
+#banner ul li span strong {float: left; font: 15px Arial; font-weight: bold;}

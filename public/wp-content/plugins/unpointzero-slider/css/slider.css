@@ -1,0 +1,93 @@
+/*--------------------------------
+	CSS file if thumbs enabled
+---------------------------------*/
+
+#featured.upzslider {
+	width:450px;
+	position:relative;
+	height:248px;
+	background-color:#fafaf9;
+	overflow:hidden;
+}
+
+#featured.upzslider ul#upz-slideshow-navigation{
+	position:absolute;
+	top:0; right:0;
+	list-style:none;
+	padding:0; margin:0;
+	width:208px;
+}
+
+#featured.upzslider ul#upz-slideshow-navigation li {
+	width:100%;
+	float:left;
+	cursor:pointer;
+}
+
+#featured.upzslider ul#upz-slideshow-navigation li img { float:left; }
+
+#featured.upzslider ul#upz-slideshow-navigation li.activeSlide {
+	background:#cccccc;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:11px;  
+	line-height:15px;
+}
+
+#featured.upzslider ul#upz-slideshow-navigation li a {
+	float:left;
+	clear:both;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:11px;  
+	line-height:15px;
+	color:#434040;
+}
+
+#featured.upzslider ul#upz-slideshow-navigation li span{
+	float:left;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:11px;  
+	color:#5E5A5A;
+	line-height:15px;
+}
+
+#featured.upzslider .info{ 
+	position:absolute; 
+	bottom:-2; left:0; 
+	height:60px; 
+	background: url('../img/transparent-bb-bg.png'); 
+}
+#featured.upzslider .info h2{ 
+	width:410px;
+	/*font-size:16px; 
+	color:#434040;*/
+	color: #777;
+	font-size: 1.1em;
+	font-family: Helvetica, Arial Narrow, Arial, sans-serif;
+	color:#fff; 0px 5px 5px 6px; margin:0;
+	line-height: 20px;
+	overflow:hidden; 
+
+
+}
+#featured.upzslider .info p{ 
+	width:410px;
+	margin:0 5px; 
+	font-family: "Helvetica Neue", Helvetica,  Arial, sans-serif;
+	font-size:11px;  
+	line-height:15px; 
+	color:#434040;
+}
+#featured.upzslider .info a{ 
+	width:410px;
+	text-decoration:none; 
+	/*color:#434040; */
+	color: #007273;
+}
+#featured.upzslider .info a:hover{ 
+	width:410px;
+	text-decoration:none; 
+}
+#featured.upzslider .ui-tabs-hide{ 
+	display:none; 
+}
+#upz-slideshow-display{ float:right !important; } #featured ul#upz-slideshow-navigation { left:0; right:auto !important; }

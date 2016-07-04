@@ -1,0 +1,8 @@
+.tentblogger-top-posts { border: 1px solid #aaa; background: #fefefe; font-family: Arial, Sans-serif; font-size: 12px; padding: 10px; border-radius: 2px; }
+.tentblogger-top-posts h3,
+.tentblogger-top-posts ol { list-style: decimal; }
+.tentblogger-top-posts li { border-top: 0 !important; margin-left: 15px; padding: 5px; }
+.tentblogger-top-posts li:hover { background: #efefef; }
+.tentblogger-top-posts img { margin-right: 5px;  }
+.tentblogger-top-posts a { text-decoration: none;  }
+.tentblogger-top-posts a:hover { color: #ddd; text-decoration:none !important;  }

@@ -1,0 +1,13 @@
+###############################################################################
+# Common directives
+###############################################################################
+
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteBase /test/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)\.html$ index\.php?id=$1&%{QUERY_STRING} [L]

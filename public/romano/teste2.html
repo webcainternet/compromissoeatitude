@@ -1,0 +1,61 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<title>s3Slider jQuery plugin</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/s3Slider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#banner").s3Slider({
+		timeOut: 4000 // Tempo de transição de cada banner. 
+	});
+});
+</script>
+</head>
+<body>
+<div id="container">
+	<div id="banner">
+        <ul id="bannerContent">
+            <li class="bannerImage">
+                <img src="http://tedk.com.br/blog/images_extras/s3Slider/images/wide/1.jpg" />
+                <span class="left">
+                	<b>Title text 1</b>
+                    <br />There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...
+                </span>
+            </li>
+            <li class="bannerImage">
+                <img src="http://tedk.com.br/blog/images_extras/s3Slider/images/wide/2.jpg" />
+                <span class="left">
+                	<strong>Title text 2</strong>
+                    <br />There are many variations of passages of Lorem Ipsum available...
+                </span>
+            </li>
+            <li class="bannerImage">
+                <img src="http://tedk.com.br/blog/images_extras/s3Slider/images/wide/3.jpg" />
+                <span class="left">
+                	<strong>Title text 3</strong>
+                    <br />There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...
+                </span>
+            </li>
+            <li class="bannerImage">
+                <img src="http://tedk.com.br/blog/images_extras/s3Slider/images/wide/4.jpg" />
+                <span class="left">
+                	<strong>Title text 4</strong>
+                    <br />There are many variations of passages of Lorem Ipsum available...
+                </span>
+            </li>
+            <li class="bannerImage">
+                <img src="images/wide/5.jpg" />
+                <span class="left">
+                	<strong>Title text 5</strong>
+                    <br />There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

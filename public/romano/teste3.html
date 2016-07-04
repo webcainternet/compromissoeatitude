@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+.sSLIDE {
+width:250px; 
+}
+td.sIMG {
+padding:0px;
+height:170px; vertical-align:top; text-align:center; 
+}
+td.sMSG {
+height:60px; padding:0px;
+border-top:#D7D7D7 1px solid; border-left:#D7D7D7 1px solid; border-right:#D7D7D7 2px solid; border-bottom:#D7D7D7 0px solid;
+}
+#imagem {width:250px; height:170px;}
+
+#texto {
+background-color:#F5F4EF; text-decoration:none;
+height:100%; vertical-align:top;
+padding-left:8px; padding-top:6px;
+border-top:#FFFFFF 2px solid; border-left:#FFFFFF 2px solid; border-right:#FFFFFF 2px solid; border-bottom:#FFFFFF 0px solid;
+}
+#titulo {
+color:#990000; font-family:tahoma,arial,verdana; font-size:11px; font-weight:bold;
+}
+#mensagem {
+color:#000000; font-family:arial,verdana; font-size:13px; font-weight:bold;
+}
+
+td.sCONTROLE {background-color:#F5F4EF; text-align:center;
+padding:3px;
+border-top:#D7D7D7 0px solid; border-left:#D7D7D7 1px solid; border-right:#D7D7D7 2px solid; border-bottom:#D7D7D7 2px solid;
+}
+span.quadro_pagina {background-color:#FAFAFA; font-size:11px; font-family:tahoma,arial,verdana;
+color:#555555; text-align:center; text-decoration:none; 
+border-left:#DDDDDD 1px solid; border-top:#DDDDDD 1px solid;
+border-right:#AAAAAA 1px solid; border-bottom:#AAAAAA 1px solid;
+padding-top:3px; padding-right:5px; padding-bottom:3px; padding-left:5px;
+}
+a.link0 {outline:0; text-decoration:none;}
+</style>
+
+<script type="text/javascript">
+/*
+Script desenvolvido por: klonder (klonder@ymail.com)
+Data de criação: 14/07/2009
+Modelo referência: www.uol.com.br
+
+Em caso de utilização, a fonte não precisa ser citada. No entanto, tenham respeito e não coloquem que o código é de sua autoria. A capacidade de respeitar o trabalho do outro mostra que tipo de indivíduo você realmente é.
+
+Esse código foi postado em uma data que ficará armazenada no POST deste fórum com referência do autor original. Por favor, não postem em outros fóruns sem a permissão do autor.
+
+Postagem exclusiva em: http://forum.imasters.com.br/index.php?showtopic=353709
+*/
+
+//---------------------------------------------------------------------
+//Criando variáveis para controle (não precisa alterar):
+var i = 0; var iFiltro = 0; var temporizador, tempEfeito; var img = new Array();var titulo = new Array();var msg = new Array();var link = new Array(); var textoCompleto = new Array();
+//---------------------------------------------------------------------
+
+
+//Defina o tempo de transição em milissegundos:
+var tempoTransicao = 5000;
+
+//Tamanho ideal para as imagens: 250 x 170 pixels;
+//Para adicionar novas imagens/textos, basta seguir o padrão dos arrays abaixo:
+img[0] = 'http://tbn1.google.com/images?q=tbn:Zy3V2-RTkDjHnM:http://www.metrofusion.xpg.com.br/imagens/natureza_1.jpg';
+link[0]='http://h.imguol.com/0907/14lulap.jpg';
+titulo[0]='0. Questão social'; msg[0]='Sem-tetos invadem Palácio do Planalto em busca de moradia.';
+
+img[1] = 'http://tbn2.google.com/images?q=tbn:bhAq6mWU-fbZmM:http://www.brtrips.com.br/BT_EXCLUSIVE/berimbau/berimbau01.gif';
+link[1]='http://h.imguol.com/0907/14titasp.jpg';
+titulo[1]='1. Música'; msg[1]='Aprenda a afinar o seu berimbau favorito!';
+
+img[2] = 'http://tbn1.google.com/images?q=tbn:oHEtwdnqtwriUM:http://www.noticiacompleta.com/wp-content/uploads/2009/03/barrichelo_formula-1.jpg';
+link[2]='http://h.imguol.com/0907/ap14rubinhop.jpg';
+titulo[2]='"2. O campeão!"'; msg[2]='Rubinho Barrichelo é campeão da <br>F-1 de 2009!';
+
+img[3] = 'http://tbn2.google.com/images?q=tbn:9TbuZ4yfMamnZM:http://www1.istockphoto.com/file_thumbview_approve/4728982/2/istockphoto_4728982-sexy-blonde-fairy.jpg';
+link[3]='http://h.imguol.com/0907/harry13b.jpg';
+titulo[3]='"3. Dia das bruxas"'; msg[3]='Saiba como escolher a fantasia perfeita!';
+
+img[4] = 'http://tbn0.google.com/images?q=tbn:HUO8_QzYdlPaNM:http://mauricius.files.wordpress.com/2007/03/89284029.jpg';
+link[4]='http://h.imguol.com/0907/14martep.jpg';
+titulo[4]='4. Java Script e programação'; msg[4]='Klonder, o melhor programador dos últimos 500 anos!';
+
+//img[5] = '';
+//link[5]='';
+//titulo[5]=''; msg[5]='';
+
+
+//Definindo a maneira como o texto será exibido na tela:
+for (var iTextos = 0; iTextos < img.length; iTextos++) {
+	textoCompleto[iTextos] = '<a href="'+link[iTextos]+'" class="link0"><span id="titulo">'+titulo[iTextos]+'</span><br><span id="mensagem">'+msg[iTextos]+'</span></a>';
+}
+
+
+//Função para exibir os slides
+function slideShow() {
+//Localizando os objetos no HTML:
+var objImg = document.getElementById("imagem");
+var objTexto = document.getElementById("texto");
+
+	//Criando apenas um controle, caso o valor do id seja maior do que os slides:
+	if (i >= img.length) {
+		i = 0;
+	}
+	
+	//Controle dos estilos, para FF e IE:	
+	objImg.style.opacity = ".0";
+	objImg.style.filter = "alpha(opacity=0)";
+	//Imprimindo a imagen e textos na tela:
+	objImg.src = img[i];
+	objTexto.innerHTML = textoCompleto[i];
+
+	//Chamando a função responsável pelos efeitos nos slides:
+	efeito();
+	//Aumentando o i de 1 em 1;
+	i++;
+
+//Criando um temporizador para ajustar o tempo de transição entre os slides:
+temporizador = window.setTimeout('slideShow()',tempoTransicao);
+}
+
+//Função que gera o efeito de transição entre os slides
+function efeito() {
+var objImg = document.getElementById("imagem");
+	//Controle para as várias possibilidades do i:
+	if (iFiltro > 100) {
+		clearInterval(tempEfeito);
+		iFiltro = 0;
+	}else{
+	 valorOpacidade = iFiltro/100;
+	 valorOpacidade = valorOpacidade.toString();
+		objImg.style.opacity = valorOpacidade;
+		objImg.style.filter = "alpha(opacity="+iFiltro+")";
+		iFiltro+=10;
+		tempEfeito = window.setTimeout('efeito()',70);
+	}
+}
+
+//Controle dos botões: ANTERIOR, PAUSA e POSTERIOR:
+function controle© {
+	if (c == -1) {
+		i-=2;
+		clearInterval(temporizador);
+		clearInterval(tempEfeito); iFiltro = 0;
+		if (i<0) {i = img.length-1};
+		slideShow();
+	}
+	if (c == 1) {
+		clearInterval(temporizador);
+		clearInterval(tempEfeito); iFiltro = 0;
+		slideShow();
+	}
+	if (c == 0) {
+		clearInterval(temporizador);
+		clearInterval(tempEfeito); iFiltro = 0;
+	}
+}
+</script>
+</head>
+<body>
+<table class="sSLIDE"  cellspacing="0" cellpadding="0">
+<tr>
+	<td class="sIMG"><img src="http://h.imguol.com/0907/14lulap.jpg" id="imagem"></td>
+</tr>
+<tr>
+	<td class="sMSG">
+	<div id="texto"></div>
+	</td>
+</tr>
+<tr>
+	<td class="sCONTROLE">
+	<div id="controle">
+		<a href="javascript:controle(-1)" class="link0"><span class="quadro_pagina">« ANTERIOR</span></a>
+		<a href="javascript:controle(0)" class="link0"><span class="quadro_pagina">||</span></a>
+		<a href="javascript:controle(+1)" class="link0"><span class="quadro_pagina">PRÓXIMO »</span></a>
+	</div>
+	</td>
+</tr>
+</table>
+</body>
+</html>

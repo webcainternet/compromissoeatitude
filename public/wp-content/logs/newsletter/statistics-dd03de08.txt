@@ -1,0 +1,17 @@
+29-11-2012 14:30:21 - ERROR - Table 'compromi.wp_newsletter_stats' doesn't exist
+29-11-2012 14:30:21 - ERROR - Table 'compromi.wp_newsletter_stats' doesn't exist
+29-11-2012 14:30:21 - ERROR - Table 'compromi.wp_newsletter_stats' doesn't exist
+29-11-2012 14:30:21 - ERROR - Duplicate column name 'user_id'
+29-11-2012 14:30:22 - ERROR - Unknown column 'newsletter_id' in 'wp_newsletter_stats'
+29-11-2012 14:30:22 - ERROR - Unknown column 'newsletter_id' in 'wp_newsletter_stats'
+29-11-2012 14:30:22 - ERROR - Unknown column 'date' in 'wp_newsletter_stats'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'user_id'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'email_id'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'link_id'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'user_id'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'created'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'url'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'anchor'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'email_id'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'token'
+29-11-2012 14:30:22 - ERROR - Duplicate column name 'text'

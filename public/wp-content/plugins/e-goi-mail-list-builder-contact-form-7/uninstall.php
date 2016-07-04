@@ -1,0 +1,1 @@
+<?php/** * Uninstall functionality**/delete_option('EgoiMailListBuilderContactForm7Object');?>
